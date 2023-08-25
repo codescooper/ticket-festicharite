@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire d'inscription</title>
+</head>
+    <body>
+        <h1>Formulaire d'inscription</h1>
+        <form method="POST" action="traitement_formulaire.php" enctype="multipart/form-data">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" required><br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" required><br><br>
+
+            <label for="date_naissance">Date de naissance (AAAA-MM-JJ) :</label>
+            <input type="text" name="date_naissance" required><br><br>
+
+            <label for="photo_piece">Photo de la pièce d'identité :</label>
+            <input type="file" name="photo_piece" accept=".jpg, .jpeg, .png" required><br><br>
+
+            <input type="submit" value="Soumettre">
+        </form>
+    </body>
+</html>
